@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 from setuptools import setup
 
-PLUGIN_ENTRY_POINT = 'ovos_tts_google = ovos_tts_plugin_google:GoogleTranslateTTS'
+PLUGIN_ENTRY_POINT = 'ovos-tts-plugin-google-tx = ovos_tts_plugin_google_tx:GoogleTranslateTTS'
 setup(
-    name='ovos-tts-plugin-google',
+    name='ovos-tts-plugin-google-tx',
     version='0.0.1',
     description='google translate tts plugin for OVOS',
-    url='https://github.com/JarbasLingua/pico-tts-plugin',
+    url='https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx',
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
-    packages=['ovos_tts_plugin_google'],
+    packages=['ovos_tts_plugin_google_tx'],
     install_requires=["phoneme_guesser",
                       "gTTS",
-                      'ovos-plugin-manager>=0.0.1a4'],
+                      'ovos-plugin-manager>=0.0.1a7'],
     zip_safe=True,
     include_package_data=True,
     classifiers=[
