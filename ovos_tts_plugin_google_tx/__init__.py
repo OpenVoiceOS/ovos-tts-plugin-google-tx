@@ -69,7 +69,7 @@ class GoogleTranslateTTS(TTS):
                 self._google_lang = self.lang[:2]
         return self._google_lang or self.lang.lower()
 
-    def get_tts(self, sentence, wav_file):
+    def get_tts(self, sentence, wav_file, lang=None):
         """Fetch tts audio using gTTS.
 
         Args:
@@ -78,7 +78,16 @@ class GoogleTranslateTTS(TTS):
         Returns:
             Tuple ((str) written file, None)
         """
-        tts = gTTS(text=sentence, lang=self.google_lang)
+        if lang:
+            supported_langs = get_supported_langs()
+            if lang not in supported_langs:
+                if lang.split('-')[0] in supported_langs:
+                    lang = lang.split('-')[0]
+                else:
+                    lang = self.google_lang
+        else:
+            lang = self.google_lang
+        tts = gTTS(text=sentence, lang=lang)
         tts.save(wav_file)
         return (wav_file, None)  # No phonemes
 
