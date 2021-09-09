@@ -50,10 +50,6 @@ def get_supported_langs():
 
 class GoogleTranslateTTS(TTS):
     def __init__(self, *args, **kwargs):
-        if "lang" not in kwargs:
-            kwargs["lang"] = "en-us"
-        if "config" not in kwargs:
-            kwargs["config"] = {}
         self._google_lang = None
         super().__init__(*args, **kwargs, audio_ext="mp3",
                          validator=GoogleTTSValidator(self))
