@@ -4,15 +4,14 @@ from setuptools import setup
 PLUGIN_ENTRY_POINT = 'ovos-tts-plugin-google-tx = ovos_tts_plugin_google_tx:GoogleTranslateTTS'
 setup(
     name='ovos-tts-plugin-google-tx',
-    version='0.0.2',
+    version='0.0.3',
     description='google translate tts plugin for OVOS',
     url='https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx',
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
     packages=['ovos_tts_plugin_google_tx'],
-    install_requires=["phoneme_guesser",
-                      "gTTS",
+    install_requires=["gTTS",
                       'ovos-plugin-manager>=0.0.1a12'],
     zip_safe=True,
     include_package_data=True,
