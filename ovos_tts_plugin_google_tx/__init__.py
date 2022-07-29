@@ -109,6 +109,18 @@ class GoogleTTSValidator(TTSValidator):
         return GoogleTranslateTTS
 
 
+GoogleTranslateTTSPluginConfig = {
+    "en": [
+        {"voice": "default", "gender": "female"}
+    ]
+}
+for lang in get_supported_langs():
+    if lang not in GoogleTranslateTTSPluginConfig:
+        GoogleTranslateTTSPluginConfig[lang] = [
+            {"voice": "default", "gender": ""}
+        ]
+
+
 if __name__ == "__main__":
     e = GoogleTranslateTTS()
 

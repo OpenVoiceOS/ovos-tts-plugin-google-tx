@@ -2,6 +2,8 @@
 from setuptools import setup
 
 PLUGIN_ENTRY_POINT = 'ovos-tts-plugin-google-tx = ovos_tts_plugin_google_tx:GoogleTranslateTTS'
+SAMPLE_CONFIGS = 'ovos-tts-plugin-google-tx.config = ovos_tts_plugin_google-tx:GoogleTranslateTTSPluginConfig'
+
 setup(
     name='ovos-tts-plugin-google-tx',
     version='0.0.3',
@@ -33,5 +35,6 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     keywords='mycroft OpenVoiceOS OVOS chatterbox plugin tts',
-    entry_points={'mycroft.plugin.tts': PLUGIN_ENTRY_POINT}
+    entry_points={'mycroft.plugin.tts': PLUGIN_ENTRY_POINT,
+                  'mycroft.plugin.tts.config': SAMPLE_CONFIGS}
 )
