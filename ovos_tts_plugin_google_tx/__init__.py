@@ -1,7 +1,7 @@
-from ovos_plugin_manager.templates.tts import TTS, TTSValidator
-from ovos_utils.log import LOG
 from gtts import gTTS
 from gtts.lang import tts_langs
+from ovos_plugin_manager.templates.tts import TTS, TTSValidator
+from ovos_utils.log import LOG
 
 # Live list of languages
 # Cached list of supported languages (2021-02-09)
@@ -26,7 +26,6 @@ _default_langs = {'af': 'Afrikaans', 'sq': 'Albanian', 'ar': 'Arabic',
                   'uk': 'Ukrainian', 'ur': 'Urdu', 'vi': 'Vietnamese',
                   'cy': 'Welsh', 'zh': 'Chinese (Mandarin/China)'
                   }
-
 
 _supported_langs = None
 
@@ -120,16 +119,12 @@ class GoogleTTSValidator(TTSValidator):
 
 
 GoogleTranslateTTSPluginConfig = {
-    "en": [
-        {"voice": "default", "gender": "female", "lang": "en", "display_name": f"Google Translate (en)"}
-    ]
-}
-for lang in get_supported_langs():
-    if lang not in GoogleTranslateTTSPluginConfig:
-        GoogleTranslateTTSPluginConfig[lang] = [
-            {"voice": "default", "gender": "", "lang": lang, "display_name": f"Google Translate ({lang})"}
-        ]
-
+    lang: {"voice": "default",
+           "gender": "",  # TODO add gender per lang
+           "lang": lang,
+           "display_name": f"Google Translate ({lang})",
+           "offline": False}
+    for lang in get_supported_langs()}
 
 if __name__ == "__main__":
     e = GoogleTranslateTTS()
