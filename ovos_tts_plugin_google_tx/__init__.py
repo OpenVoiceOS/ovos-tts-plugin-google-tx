@@ -108,16 +108,26 @@ class GoogleTTSValidator(TTSValidator):
     def get_tts_class(self):
         return GoogleTranslateTTS
 
+    @property
+    def available_languages(self) -> set:
+        """Return languages supported by this TTS implementation in this state
+        This property should be overridden by the derived class to advertise
+        what languages that engine supports.
+        Returns:
+            set: supported languages
+        """
+        return set(get_supported_langs())
+
 
 GoogleTranslateTTSPluginConfig = {
     "en": [
-        {"voice": "default", "gender": "female"}
+        {"voice": "default", "gender": "female", "lang": "en", "display_name": f"Google Translate (en)"}
     ]
 }
 for lang in get_supported_langs():
     if lang not in GoogleTranslateTTSPluginConfig:
         GoogleTranslateTTSPluginConfig[lang] = [
-            {"voice": "default", "gender": ""}
+            {"voice": "default", "gender": "", "lang": lang, "display_name": f"Google Translate ({lang})"}
         ]
 
 
