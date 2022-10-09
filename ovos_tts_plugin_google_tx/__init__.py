@@ -126,7 +126,6 @@ GoogleTranslateTTSPluginConfig = {
            "offline": False}]
     for lang in get_supported_langs()}
 
-print(GoogleTranslateTTSPluginConfig)
 
 if __name__ == "__main__":
     e = GoogleTranslateTTS()
