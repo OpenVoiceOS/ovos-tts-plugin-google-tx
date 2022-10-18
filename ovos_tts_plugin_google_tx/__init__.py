@@ -122,6 +122,7 @@ GoogleTranslateTTSPluginConfig = {
     lang: [{"voice": "default",
            "gender": "",  # TODO add gender per lang
            "lang": lang,
+            "priority": 55,
            "display_name": f"Google Translate ({lang})",
            "offline": False}]
     for lang in get_supported_langs()}
