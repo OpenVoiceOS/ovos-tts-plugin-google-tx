@@ -10,7 +10,7 @@ BASEDIR = os.path.abspath(os.path.dirname(__file__))
 def get_version():
     """ Find the version of the package"""
     version = None
-    version_file = os.path.join(BASEDIR, 'ovos_tts_plugin_mimic3', 'version.py')
+    version_file = os.path.join(BASEDIR, 'ovos_tts_plugin_google_tx', 'version.py')
     major, minor, build, alpha = (None, None, None, None)
     with open(version_file) as f:
         for line in f:
@@ -49,14 +49,6 @@ def required(requirements_file):
             requirements = [r.replace('==', '>=').replace('~=', '>=') for r in requirements]
         return [pkg for pkg in requirements
                 if pkg.strip() and not pkg.startswith("#")]
-
-
-def get_lang_extras():
-    # Create language-specific extras
-    langs = ["de", "es", "fa", "fr", "it", "nl", "ru", "sw"]
-    extras = {lang: f"mycroft-mimic3-tts[{lang}]" for lang in langs}
-    extras["all"] = [f"mycroft-mimic3-tts[{lang}]" for lang in langs]
-    return extras
 
 
 PLUGIN_ENTRY_POINT = 'ovos-tts-plugin-google-tx = ovos_tts_plugin_google_tx:GoogleTranslateTTS'
