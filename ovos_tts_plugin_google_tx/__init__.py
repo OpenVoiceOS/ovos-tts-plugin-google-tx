@@ -118,11 +118,11 @@ class GoogleTTSValidator(TTSValidator):
         return set(get_supported_langs())
 
 
+lang2gender = {"en": "female"}  # TODO add gender per lang
 GoogleTranslateTTSPluginConfig = {
-    lang: [{"voice": "default",
-            "lang": lang,
+    lang: [{"lang": lang,
             "meta": {
-                "gender": "",  # TODO add gender per lang
+                "gender": lang2gender.get(lang, ""),
                 "priority": 55,
                 "display_name": f"Google Translate ({lang})",
                 "offline": False}
@@ -130,6 +130,7 @@ GoogleTranslateTTSPluginConfig = {
     for lang in get_supported_langs()}
 
 if __name__ == "__main__":
+    print(GoogleTranslateTTSPluginConfig)
     e = GoogleTranslateTTS()
 
     ssml = """Hello world"""
