@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/HEAD)
+## [V0.0.4a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/V0.0.4a2) (2023-03-14)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/e41bcfeb8a1ddf2c409d256542faca0896ca2d24...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/e41bcfeb8a1ddf2c409d256542faca0896ca2d24...V0.0.4a2)
 
 **Implemented enhancements:**
 
