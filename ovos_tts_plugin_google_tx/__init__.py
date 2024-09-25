@@ -129,6 +129,7 @@ GoogleTranslateTTSPluginConfig = {
             }]
     for lang in get_supported_langs()}
 
+
 if __name__ == "__main__":
     print(GoogleTranslateTTSPluginConfig)
     e = GoogleTranslateTTS()
