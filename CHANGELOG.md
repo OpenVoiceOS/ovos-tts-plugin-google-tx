@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.4a4](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/0.0.4a4) (2024-09-25)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/V0.0.4a3...0.0.4a4)
+
+**Merged pull requests:**
+
+- feat:semver [\#10](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/10) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.4a3](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/V0.0.4a3) (2023-03-15)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/V0.0.4a2...V0.0.4a3)
+
 ## [V0.0.4a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/V0.0.4a2) (2023-03-14)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/e41bcfeb8a1ddf2c409d256542faca0896ca2d24...V0.0.4a2)
