@@ -1,36 +1,12 @@
 # Changelog
 
-## [0.0.4a4](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/0.0.4a4) (2024-09-25)
+## [1.0.0a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.0a1) (2024-09-25)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/V0.0.4a3...0.0.4a4)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/0.0.4...1.0.0a1)
 
-**Merged pull requests:**
+**Breaking changes:**
 
-- feat:semver [\#10](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/10) ([JarbasAl](https://github.com/JarbasAl))
-
-## [V0.0.4a3](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/V0.0.4a3) (2023-03-15)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/V0.0.4a2...V0.0.4a3)
-
-## [V0.0.4a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/V0.0.4a2) (2023-03-14)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/e41bcfeb8a1ddf2c409d256542faca0896ca2d24...V0.0.4a2)
-
-**Implemented enhancements:**
-
-- feat/available\_languages [\#6](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/6) ([NeonJarbas](https://github.com/NeonJarbas))
-- feat/sample\_configs [\#5](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/5) ([NeonJarbas](https://github.com/NeonJarbas))
-
-**Closed issues:**
-
-- Legal issues with gTTS API? [\#1](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/issues/1)
-
-**Merged pull requests:**
-
-- update plugin config [\#9](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/9) ([JarbasAl](https://github.com/JarbasAl))
-- add "offline" metadata key [\#7](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/7) ([NeonJarbas](https://github.com/NeonJarbas))
-- Added lang as an optional parameter to get\_tts [\#3](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/3) ([Joanguitar](https://github.com/Joanguitar))
-- add disclaimer [\#2](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/2) ([JarbasAl](https://github.com/JarbasAl))
+- feat!:tld\_support [\#12](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/12) ([JarbasAl](https://github.com/JarbasAl))
 
 
 

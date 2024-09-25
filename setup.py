@@ -52,7 +52,7 @@ def required(requirements_file):
 
 
 PLUGIN_ENTRY_POINT = 'ovos-tts-plugin-google-tx = ovos_tts_plugin_google_tx:GoogleTranslateTTS'
-SAMPLE_CONFIGS = 'ovos-tts-plugin-google-tx.config = ovos_tts_plugin_google_tx:GoogleTranslateTTSPluginConfig'
+
 
 setup(
     name='ovos-tts-plugin-google-tx',
@@ -76,6 +76,5 @@ setup(
         "Programming Language :: Python :: 3.9",
     ],
     keywords='mycroft OpenVoiceOS OVOS google translate plugin tts',
-    entry_points={'mycroft.plugin.tts': PLUGIN_ENTRY_POINT,
-                  'mycroft.plugin.tts.config': SAMPLE_CONFIGS}
+    entry_points={'mycroft.plugin.tts': PLUGIN_ENTRY_POINT}
 )
