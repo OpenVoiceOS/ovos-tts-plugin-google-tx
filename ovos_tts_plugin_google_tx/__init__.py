@@ -16,7 +16,7 @@ REGIONAL_CONFIGS = {
     "en-NG": {"lang": "en", "tld": "com.ng"},
     "fr-FR": {"lang": "fr", "tld": "fr"},
     "fr-CA": {"lang": "fr", "tld": "ca"},
-    "pt-PT": {"lang": "pt", "tld": "pt"},
+    "pt-PT": {"lang": "pt-PT", "tld": "pt"},
     "pt-BR": {"lang": "pt", "tld": "com.br"},
     "es-ES": {"lang": "es", "tld": "es"},
     "es-US": {"lang": "es", "tld": "us"},
@@ -51,19 +51,25 @@ class GoogleTranslateTTS(TTS):
         if lang in REGIONAL_CONFIGS:
             tld = REGIONAL_CONFIGS[lang].get("tld", "com")
             lang = REGIONAL_CONFIGS[lang]["lang"]
-
-        tts = gTTS(text=sentence, lang=lang, tld=tld)
+        elif lang not in tts_langs():
+            lang = lang.split("-")[0]
+        tts = gTTS(text=sentence, lang=lang, tld=tld,
+                   slow=self.config.get("slow", False),
+                   lang_check=self.config.get("lang_check", False))
         tts.save(wav_file)
         return (wav_file, None)  # No phonemes
 
 
 if __name__ == "__main__":
     e = GoogleTranslateTTS()
+    ssml = "wakker worden"
+    e.get_tts(ssml, f"nl-NL.mp3", lang="nl-NL")
 
     ssml = """Hello world"""
     for l in REGIONAL_CONFIGS:
         if l.startswith("en-"):
             e.get_tts(ssml, f"{l}.mp3", lang=l)
+
     ssml = """Olá Mundo! Bom dia alegria"""
     for l in REGIONAL_CONFIGS:
         if l.startswith("pt-"):
