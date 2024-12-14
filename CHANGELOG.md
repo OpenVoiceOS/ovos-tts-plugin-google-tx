@@ -1,12 +1,20 @@
 # Changelog
 
-## [1.0.0a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.0a1) (2024-09-25)
+## [1.0.1a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.1a1) (2024-12-14)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/0.0.4...1.0.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.0...1.0.1a1)
 
-**Breaking changes:**
+**Fixed bugs:**
 
-- feat!:tld\_support [\#12](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/12) ([JarbasAl](https://github.com/JarbasAl))
+- Possible issue with lang key [\#14](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/issues/14)
+
+**Closed issues:**
+
+- Problems with  ovos-tts-plugin-google-tx german language [\#4](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/issues/4)
+
+**Merged pull requests:**
+
+- fix: lang code handling [\#15](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/15) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
