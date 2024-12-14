@@ -28,15 +28,38 @@ It can stop working at any time and should never be used in production or commer
 
 you can override the language, otherwise system lang is used
 
-the `tld` option can also be set to [force accents](https://gtts.readthedocs.io/en/latest/module.html#localized-accents) and is also useful when ``google.com`` might be blocked within a network but a local or different Google host not
-
 ```json
   "tts": {
     "module": "ovos-tts-plugin-google-tx",
     "ovos-tts-plugin-google-tx": {
-      "lang": "pt-PT",
-      "tld": "pt"
+      "slow": false,
+      "lang": "fr",
+      "tld": "ca"
     }
 ```
 
+the `tld` option can also be set to [force accents](https://gtts.readthedocs.io/en/latest/module.html#localized-accents) and is also useful when ``google.com`` might be blocked within a network but a local or different Google host not
 
+The plugin will automatically recognize the following extra Accents/Dialects and select the correct tld for these langs
+
+```python
+# https://gtts.readthedocs.io/en/latest/module.html#localized-accents
+REGIONAL_CONFIGS = {
+    "en-AU": {"lang": "en", "tld": "com.au"},
+    "en-GB": {"lang": "en", "tld": "co.uk"},
+    "en-US": {"lang": "en", "tld": "us"},
+    "en-CA": {"lang": "en", "tld": "ca"},
+    "en-IN": {"lang": "en", "tld": "co.in"},
+    "en-IE": {"lang": "en", "tld": "ie"},
+    "en-ZA": {"lang": "en", "tld": "co.za"},
+    "en-NG": {"lang": "en", "tld": "com.ng"},
+    "fr-FR": {"lang": "fr", "tld": "fr"},
+    "fr-CA": {"lang": "fr", "tld": "ca"},
+    "pt-BR": {"lang": "pt", "tld": "com.br"},
+    "es-ES": {"lang": "es", "tld": "es"},
+    "es-US": {"lang": "es", "tld": "us"},
+    "es-MX": {"lang": "es", "tld": "com.mx"},
+    "zh-CN": {"lang": "zh-CN"},
+    "zh-TW": {"lang": "zh-TW"}
+}
+```
