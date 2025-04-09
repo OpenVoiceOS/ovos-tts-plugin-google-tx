@@ -30,6 +30,7 @@ class GoogleTranslateTTS(TTS):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs, audio_ext="mp3")
 
+    @property
     def available_languages(self) -> set:
         return set(tts_langs().keys())
 
