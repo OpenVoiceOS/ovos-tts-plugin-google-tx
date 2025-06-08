@@ -1,8 +1,8 @@
 from gtts import gTTS
 from gtts.lang import tts_langs
 from ovos_plugin_manager.templates.tts import TTS
+from ovos_utils import classproperty
 from ovos_utils.lang import standardize_lang_tag
-
 
 # https://gtts.readthedocs.io/en/latest/module.html#localized-accents
 REGIONAL_CONFIGS = {
@@ -30,8 +30,8 @@ class GoogleTranslateTTS(TTS):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs, audio_ext="mp3")
 
-    @property
-    def available_languages(self) -> set:
+    @classproperty
+    def available_languages(cls) -> set:
         return set(tts_langs().keys())
 
     def get_tts(self, sentence, wav_file,
