@@ -1,12 +1,12 @@
 # Changelog
 
-## [1.0.3a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.3a1) (2025-06-08)
+## [1.0.4a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.4a1) (2025-11-22)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.2...1.0.3a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.3...1.0.4a1)
 
 **Merged pull requests:**
 
-- fix: compatibility with ovos-plugin-manager 1.X.X [\#19](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/19) ([JarbasAl](https://github.com/JarbasAl))
+- Update requirements.txt [\#21](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/21) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
