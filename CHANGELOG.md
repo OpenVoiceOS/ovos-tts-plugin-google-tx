@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.4a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.4a2) (2025-12-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.4a1...1.0.4a2)
+
+**Merged pull requests:**
+
+- chore: Configure Renovate [\#23](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/23) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [1.0.4a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.4a1) (2025-11-22)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.3...1.0.4a1)
