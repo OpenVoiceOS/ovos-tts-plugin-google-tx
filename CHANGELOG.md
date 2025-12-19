@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.4a4](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.4a4) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.4a3...1.0.4a4)
+
+**Merged pull requests:**
+
+- chore\(deps\): update pilosus/action-pip-license-checker action to v3 [\#31](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/31) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update actions/setup-python action to v6 [\#30](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/30) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [1.0.4a3](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.4a3) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.4a2...1.0.4a3)
