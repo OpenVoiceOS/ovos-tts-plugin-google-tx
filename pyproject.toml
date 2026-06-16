@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ovos-tts-plugin-google-tx"
+dynamic = ["version"]
+description = "google translate tts plugin for OVOS"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "JarbasAi", email = "jarbasai@mailfence.com"}
+]
+keywords = ["mycroft", "OpenVoiceOS", "OVOS", "google", "translate", "plugin", "tts"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Text Processing :: Linguistic",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+dependencies = [
+    "ovos-plugin-manager>=1.0.0,<3.0.0",
+    "gTTS",
+]
+
+[project.urls]
+Homepage = "https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx"
+
+[project.entry-points."opm.tts"]
+"ovos-tts-plugin-google-tx" = "ovos_tts_plugin_google_tx:GoogleTranslateTTS"
+
+[tool.setuptools.dynamic]
+version = {attr = "ovos_tts_plugin_google_tx.version.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ovos_tts_plugin_google_tx*"]
