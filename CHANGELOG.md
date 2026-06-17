@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.5a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.5a2) (2026-06-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.5a1...1.0.5a2)
+
+**Merged pull requests:**
+
+- test: add TTS intelligibility e2e \(ovoscope\) [\#35](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/35) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [1.0.5a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.5a1) (2026-06-16)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.4a8...1.0.5a1)
