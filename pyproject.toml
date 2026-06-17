@@ -25,6 +25,12 @@ dependencies = [
     "gTTS",
 ]
 
+[project.optional-dependencies]
+test = [
+    "ovoscope[tts]",
+    "pytest",
+]
+
 [project.urls]
 Homepage = "https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx"
 
