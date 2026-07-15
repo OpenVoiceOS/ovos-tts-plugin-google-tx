@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.5a3](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.5a3) (2026-07-15)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.5a2...1.0.5a3)
+
+**Merged pull requests:**
+
+- Serve plugin via ovos-tts-server docker image [\#40](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/40) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [1.0.5a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.5a2) (2026-06-17)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.5a1...1.0.5a2)
