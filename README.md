@@ -15,6 +15,31 @@ It can stop working at any time and should never be used in production or commer
 
 `pip install ovos-tts-plugin-google-tx`
 
+## Docker
+
+A prebuilt image serves this plugin behind [ovos-tts-server](https://github.com/OpenVoiceOS/ovos-tts-server)
+(an ElevenLabs-compatible HTTP API) on port `9666`:
+
+```bash
+docker run -p 9666:9666 ghcr.io/openvoiceos/ovos-tts-plugin-google-tx:dev
+```
+
+or with compose:
+
+```bash
+docker compose up
+```
+
+The served language defaults to `en` and is set via the `GTTS_LANG` build arg:
+
+```bash
+docker build --build-arg GTTS_LANG=fr -t google-tx-tts .
+```
+
+The image is self-contained and needs **no API key**, but it does need **network
+access at runtime**: gTTS synthesizes speech by calling `translate.google.com`, so the
+container is not an offline/air-gapped voice.
+
 ## Configuration
 
 ```json
