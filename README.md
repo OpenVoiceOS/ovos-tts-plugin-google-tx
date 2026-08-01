@@ -1,19 +1,27 @@
 ## Description
-OVOS TTS plugin for [gTTS](https://github.com/pndurette/gTTS)
+
+This is a text-to-speech (TTS) plugin for OpenVoiceOS (OVOS). It generates
+speech through [gTTS](https://github.com/pndurette/gTTS), a library that
+calls the undocumented speech endpoint behind [Google Translate](https://translate.google.com).
 
 ### Disclaimer
 
-[gTTS](https://github.com/pndurette/gTTS) is *not* affiliated with Google or Google Cloud. Breaking upstream changes *can* occur without notice. This project is leveraging the undocumented [Google Translate](https://translate.google.com) speech functionality and is *different* from [Google Cloud Text-to-Speech](https://cloud.google.com/text-to-speech/).
+gTTS is not affiliated with Google or Google Cloud. Upstream changes can
+break this plugin without notice. This plugin uses the undocumented Google
+Translate speech endpoint and is different from [Google Cloud Text-to-Speech](https://cloud.google.com/text-to-speech/).
 
-Usage of this plugin is in a somewhat legal grey area, it does exactly what your browser does when it presses the speak button in google translate. 
-
-It can stop working at any time and should never be used in production or commercially!
+This plugin does exactly what your browser does when you press the speak
+button in Google Translate. That puts its use in a legal gray area. It can
+stop working at any time. Do not use it in production or for commercial
+purposes.
 
 ![](./gtts.png)
 
 ## Install
 
-`pip install ovos-tts-plugin-google-tx`
+```bash
+pip install ovos-tts-plugin-google-tx
+```
 
 ## Docker
 
@@ -30,15 +38,15 @@ or with compose:
 docker compose up
 ```
 
-The served language defaults to `en` and is set via the `GTTS_LANG` build arg:
+The served language defaults to `en`. Set it with the `GTTS_LANG` build arg:
 
 ```bash
 docker build --build-arg GTTS_LANG=fr -t google-tx-tts .
 ```
 
-The image is self-contained and needs **no API key**, but it does need **network
-access at runtime**: gTTS synthesizes speech by calling `translate.google.com`, so the
-container is not an offline/air-gapped voice.
+The image needs no API key, but it does need network access at runtime.
+gTTS synthesizes speech by calling `translate.google.com`, so the container
+is not an offline voice.
 
 ## Configuration
 
@@ -46,12 +54,12 @@ container is not an offline/air-gapped voice.
   "tts": {
     "module": "ovos-tts-plugin-google-tx"
   }
- 
 ```
 
 ### Extra options
 
-you can override the language, otherwise system lang is used
+You can override the language. Otherwise the plugin uses the system
+language.
 
 ```json
   "tts": {
@@ -61,11 +69,15 @@ you can override the language, otherwise system lang is used
       "lang": "fr",
       "tld": "ca"
     }
+  }
 ```
 
-the `tld` option can also be set to [force accents](https://gtts.readthedocs.io/en/latest/module.html#localized-accents) and is also useful when ``google.com`` might be blocked within a network but a local or different Google host not
+Set the `tld` option to [force an accent](https://gtts.readthedocs.io/en/latest/module.html#localized-accents).
+This option also helps when a network blocks `google.com` but allows a
+local or different Google host.
 
-The plugin will automatically recognize the following extra Accents/Dialects and select the correct tld for these langs
+The plugin recognizes the following regional accents and dialects, and
+picks the matching `tld` for each:
 
 ```python
 # https://gtts.readthedocs.io/en/latest/module.html#localized-accents
@@ -88,3 +100,12 @@ REGIONAL_CONFIGS = {
     "zh-TW": {"lang": "zh-TW"}
 }
 ```
+
+## Related projects
+
+- [OpenVoiceOS/ovos-tts-server](https://github.com/OpenVoiceOS/ovos-tts-server) — the HTTP TTS server this plugin's Docker image runs behind.
+- [OpenVoiceOS/ovos-plugin-manager](https://github.com/OpenVoiceOS/ovos-plugin-manager) — loads and configures TTS plugins for OVOS.
+
+## License
+
+Apache-2.0. See [LICENSE](./LICENSE).
