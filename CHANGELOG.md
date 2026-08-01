@@ -1,12 +1,89 @@
 # Changelog
 
-## [1.0.3a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.3a1) (2025-06-08)
+## [1.0.5a4](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.5a4) (2026-08-01)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.2...1.0.3a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.5a3...1.0.5a4)
 
 **Merged pull requests:**
 
-- fix: compatibility with ovos-plugin-manager 1.X.X [\#19](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/19) ([JarbasAl](https://github.com/JarbasAl))
+- docs: rewrite README in Simplified Technical English [\#48](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/48) ([JarbasAl](https://github.com/JarbasAl))
+
+## [1.0.5a3](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.5a3) (2026-07-15)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.5a2...1.0.5a3)
+
+**Merged pull requests:**
+
+- Serve plugin via ovos-tts-server docker image [\#40](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/40) ([JarbasAl](https://github.com/JarbasAl))
+
+## [1.0.5a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.5a2) (2026-06-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.5a1...1.0.5a2)
+
+**Merged pull requests:**
+
+- test: add TTS intelligibility e2e \(ovoscope\) [\#35](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/35) ([JarbasAl](https://github.com/JarbasAl))
+
+## [1.0.5a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.5a1) (2026-06-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.4a8...1.0.5a1)
+
+**Merged pull requests:**
+
+- fix: require ovos-plugin-manager\>=2.1.0 for opm.\* entry points and cap ovos-\* deps at next major [\#37](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/37) ([JarbasAl](https://github.com/JarbasAl))
+
+## [1.0.4a8](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.4a8) (2026-06-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.4a6...1.0.4a8)
+
+**Merged pull requests:**
+
+- chore: add missing shared CI workflows [\#34](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/34) ([JarbasAl](https://github.com/JarbasAl))
+
+## [1.0.4a6](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.4a6) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.4a5...1.0.4a6)
+
+**Merged pull requests:**
+
+- chore\(deps\): update dependency python to 3.14 [\#24](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/24) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [1.0.4a5](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.4a5) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.4a4...1.0.4a5)
+
+## [1.0.4a4](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.4a4) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.4a3...1.0.4a4)
+
+**Merged pull requests:**
+
+- chore\(deps\): update pilosus/action-pip-license-checker action to v3 [\#31](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/31) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update actions/setup-python action to v6 [\#30](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/30) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [1.0.4a3](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.4a3) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.4a2...1.0.4a3)
+
+**Merged pull requests:**
+
+- chore\(deps\): update actions/checkout action to v6 [\#29](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/29) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [1.0.4a2](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.4a2) (2025-12-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.4a1...1.0.4a2)
+
+**Merged pull requests:**
+
+- chore: Configure Renovate [\#23](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/23) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [1.0.4a1](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.4a1) (2025-11-22)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.3...1.0.4a1)
+
+**Merged pull requests:**
+
+- Update requirements.txt [\#21](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/21) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
