@@ -5,7 +5,7 @@
 #
 # gTTS calls translate.google.com to synthesize speech, so this container needs
 # network access (it is not an offline/air-gapped voice). No API key is required.
-FROM python:3.11-slim
+FROM python:3.14-slim
 
 # ffmpeg: gTTS emits mp3; ovos-tts-server transcodes non-WAV plugin output to WAV.
 RUN apt-get update && apt-get install -y --no-install-recommends \
