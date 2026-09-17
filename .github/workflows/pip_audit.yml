@@ -9,3 +9,13 @@ jobs:
   pip_audit:
     uses: OpenVoiceOS/gh-automations/.github/workflows/pip-audit.yml@dev
     secrets: inherit
+    with:
+      # T-2377: ids the audit reports at dev with no floor that can fix them.
+      # Review the list when gTTS lifts its click cap.
+      # PYSEC-2026-2132: click 8.1.8, fixed in 8.3.3. gTTS 2.5.4 (latest
+      #   release) caps click<8.2.
+      # The first id is the shared default. A caller value replaces the
+      # default, so it is repeated here.
+      ignore_vulns: |
+        GHSA-r9hx-vwmv-q579
+        PYSEC-2026-2132
