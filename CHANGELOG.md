@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.5a5](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.5a5) (2026-09-26)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.5a4...1.0.5a5)
+
+**Merged pull requests:**
+
+- Update docker/login-action action to v4 [\#45](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/45) ([renovate[bot]](https://github.com/apps/renovate))
+- Update python Docker tag to v3.14 [\#41](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/pull/41) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [1.0.5a4](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/tree/1.0.5a4) (2026-08-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-tts-plugin-google-tx/compare/1.0.5a3...1.0.5a4)
